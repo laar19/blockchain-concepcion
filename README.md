@@ -1,2 +1,2 @@
 # blockchain-concepcion
-concepción del funcionamiento de una blockchain
+Concepción del funcionamiento de una blockchain.
