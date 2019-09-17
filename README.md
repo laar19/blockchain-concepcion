@@ -1,5 +1,6 @@
 # Concepción del funcionamiento de una blockchain.
 
+<img src="https://img.shields.io/badge/GPL-v3-green"/>
 
 ## `main.py`
 
