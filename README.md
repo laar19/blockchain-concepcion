@@ -4,5 +4,5 @@
 
 ## `main.py`
 
-Crea 10 bloques dentro de la blockchain.
+Crea 10 bloques dentro de la blockchain.   
 Simula el envío de monedas de una billetera a otra.
