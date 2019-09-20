@@ -24,7 +24,7 @@ class Block:
     def crea_archivo_texto(self):
         nombre_archivo = "BLOQUE " + str(self.index)
         archivo_de_texto = open(nombre_archivo, "w")
-        archivo_de_texto.write("this_hash = {}\nthis_index = {}\nthis_timestamp = {}\nthis_data = {}\npreviousHash = {}".format(self.currentHash, self.index, self.timestamp, self.data, self.previousHash))
+        archivo_de_texto.write("this_hash = {}\nthis_index = {}\nthis_timestamp = {}\nthis_data = {}\npreviousHash = {}\namountSent = {}\naddressSender = {}\naddressReceiver = {}".format(self.currentHash, self.index, self.timestamp, self.data, self.previousHash, self.amountSent, self.addressSender, self.addressReceiver))
         archivo_de_texto.close()
 
     # Inserta el bloque en la blockchain

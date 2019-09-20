@@ -8,8 +8,8 @@ bloque_genesis.blockchain_append(blockChain) # Crea el bloque génesis y lo inse
 bloque_genesis.crea_archivo_texto()
 
 #totalLochas = 100					   # Total de monedas creadas .Se agregaría esta funcionalidad a futuro
-luis = Wallet("Luis", 0000, 100, 0, 0) # Billetera de Luis
-ana  = Wallet("Ana", 1111, 0, 0, 0)    # Billetera de Ana
+luis = Wallet("Luis", 1111, 100, 0, 0) # Billetera de Luis
+ana  = Wallet("Ana", 2222, 0, 0, 0)    # Billetera de Ana
 wallets = [luis, ana]
 
 # Creación de unos bloques de ejemplo
@@ -38,8 +38,20 @@ for item in blockChain:
 # Transacción de ejemplo
 # Envío de monedas de una billetera a otra
 wallet1, wallet2, amount = transactionSent(wallets[0], wallets[1], 50)  # Transacción correcta
+bloque = generateBlock(blockChain[-1], wallet1, wallet2, amount)    	# Crea el bloque con la transacción anterior
+bloque.amountSent = amount
+bloque.addressSender = wallet1.address
+bloque.addressReceiver = wallet2.address
+bloque.blockchain_append(blockChain)
+bloque.crea_archivo_texto()
+
 wallet1, wallet2, amount = transactionSent(wallets[0], wallets[1], 101) # Transacción fallida
-generateBlock(blockChain[-1], wallet1, wallet2, amount)    				# Crea el bloque con la transacción anterior
+bloque = generateBlock(blockChain[-1], wallet1, wallet2, amount)    	# Crea el bloque con la transacción anterior
+bloque.amountSent = amount
+bloque.addressSender = wallet1.address
+bloque.addressReceiver = wallet2.address
+bloque.blockchain_append(blockChain)
+bloque.crea_archivo_texto()
 
 # Información de las carteras
 for item in wallets:
