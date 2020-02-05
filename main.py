@@ -7,7 +7,7 @@ bloque_genesis = createGenesisBlock()
 bloque_genesis.blockchain_append(blockChain) # Crea el bloque génesis y lo inserta en la blockchain
 bloque_genesis.crea_archivo_texto()
 
-#totalLochas = 100					   # Total de monedas creadas .Se agregaría esta funcionalidad a futuro
+#totalLochas = 100					   # Total de monedas creadas. Se agregará esta función a futuro
 luis = Wallet("Luis", 1111, 100, 0, 0) # Billetera de Luis
 ana  = Wallet("Ana", 2222, 0, 0, 0)    # Billetera de Ana
 wallets = [luis, ana]

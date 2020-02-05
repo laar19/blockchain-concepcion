@@ -43,7 +43,7 @@ def isValidNewBlock(previousBlock, newBlock):
 
 # Transacción
 # Función que simula el envío de monedas de una cuenta a otra
-# Reibe como parámetros la dirección de la billetera que envía,
+# Recibe como parámetros la dirección de la billetera que envía,
 # la dirección de la billetera que recibe y el monto a enviar
 def transactionSent(walletSender, walletReceiver, amountSent):
     amountWalletSender     = walletSender.amount

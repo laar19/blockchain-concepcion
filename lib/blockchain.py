@@ -7,7 +7,7 @@ class Block:
         self.index           = numero_bloque                  # Número cronológico del bloque
         self.previousHash    = None                           # Hash del bloque anterior
         self.timestamp       = datetime.now()                 # Fecha de creación del bloque
-        self.data            = "BLOQUE {}".format(self.index) # Informaxión extra del bloque
+        self.data            = "BLOQUE {}".format(self.index) # Información extra del bloque
         self.currentHash     = self.generateHash()            # Hash del bloque actual creado
         self.amountSent      = None                           # Monto enviado
         self.addressSender   = None                           # Wallet que envía
