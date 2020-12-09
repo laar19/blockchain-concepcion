@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/GPL-v3-green"/>
 
-## `main.py`
+## Launch __main.py__
 
-Crea 10 bloques dentro de la blockchain.   
-Simula el envío de monedas de una billetera a otra.
+Create 10 blocks within the blockchain.   
+Simulates sending coins from one wallet to another.
