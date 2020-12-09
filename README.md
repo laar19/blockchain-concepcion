@@ -1,4 +1,4 @@
-# Concepción del funcionamiento de una blockchain.
+# Conception of the operation of a blockchain.
 
 <img src="https://img.shields.io/badge/GPL-v3-green"/>
 
